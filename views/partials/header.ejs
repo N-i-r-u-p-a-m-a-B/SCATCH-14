@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scatch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="/stylesheets/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-['helvetica_now_display']">
+    <nav class="w-full flex justify-between px-[4vh] py-1 bg-[#B7AA98]">
+      <h3 class="inline-block mt-2 text-[#3F2305] hover:text-zinc-500 text-5xl">
+        Scatch
+      </h3>
+
+      <% var loggedin = typeof loggedin !== "undefined" ? loggedin : true; %> 
+      <% if(loggedin) { %>
+      <div class="flex gap-7 mt-3 mb-2 text-[#3F2305]">
+        <a class="text-3xl" href="/shop">Shop</a>
+        <a class="text-3xl" href="/cart">Cart</a>
+        <a class="text-3xl" href="/products/create">Create Product</a>
+        <form
+          id="logout-form"
+          action="/users/logout"
+          method="POST"
+          class="inline"
+        >
+          <button
+            type="submit"
+            class="text-red-600 text-3xl bg-transparent border-none cursor-pointer"
+          >
+            Logout
+          </button>
+        </form>
+      </div>
+      <% } %>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<%- include('./partials/header') %>
+
+<div class="w-full h-[70vh] mt-2">
+  <div class="flex gap-[8vw] w-full">
+    <div class="pt-10 flex flex-col pl-10 w-2/12 text-[#3F2305]">
+      <a class="text-[1.5vw]" href="/owners/admin">All Products</a>
+      <a class="text-[1.5vw]" href="/products/create">Create New Product</a>
+    </div>
+    <div class="h-screen pl-10 w-10/12 text-[#3F2305]">
+      <h1 class="text-4xl mt-4 py-2">Create New Product</h1>
+      <div class="border border-[1px] border-[#B7A998] rounded-full"></div>
+      <form
+        action="/products/create"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <h1 class="text-3xl mt-4">Product Details</h1>
+        <div class="flex">
+          <label class="text-2xl mt-4">Product Image</label>
+          <input
+            type="file"
+            name="image"
+            class="text-1xl mx-2 mt-2 px-4 py-1 text-zinc-100"
+          />
+        </div>
+
+        <input
+          name="name"
+          placeholder="Product Name"
+          class="border-[1px] border-solid border-[#B7A998] rounded-lg w-1/3 text-2xl"
+          type="text"
+        />
+        <input
+          name="price"
+          placeholder="Product Price"
+          class="border-[1px] border-solid border-[#B7A998] rounded-lg w-1/3 m-3 text-2xl"
+          type="text"
+        />
+        <div>
+          <input
+            name="discount"
+            placeholder="Discount Price"
+            class="border-[1px] border-solid border-[#B7A998] rounded-lg w-1/3 text-2xl"
+            type="text"
+          />
+        </div>
+
+        <div class="mt-20">
+          <h1 class="text-3xl">Panel Details</h1>
+          <div>
+            <input
+              name="bgcolor"
+              placeholder="Background Color"
+              class="border-[1px] border-solid border-[#B7A998] rounded-lg w-1/3 text-2xl"
+              type="text"
+            />
+            <input
+              name="panelcolor"
+              placeholder="Panel Color"
+              class="border-[1px] border-solid border-[#B7A998] rounded-lg w-1/3 m-3 text-2xl"
+              type="text"
+            />
+            <input
+              name="textcolor"
+              placeholder="Text Color"
+              class="border-[1px] border-solid border-[#B7A998] rounded-lg w-1/3 text-2xl"
+              type="text"
+            />
+            <div class="flex items-center">
+              <input
+                value="Create New Product"
+                class="border-2 border-solid rounded-xl bg-[#B7A998] w-2/2 px-1 py-1 my-5 text-2xl"
+                type="submit"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer') %>
