@@ -15,7 +15,7 @@ Scatch is a modern eCommerce web app for handbags, built with Express, MongoDB, 
 
 ## Installation
 1. Clone the Repository:
-git clone https://github.com/1sakshi-taneja/Scatch.git
+git clone https://https://github.com/N-i-r-u-p-a-m-a-B/SCATCH-14
 2. Navigate to the Project Directory:
    cd Scatch
 3. Install Dependencies:
