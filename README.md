@@ -3,7 +3,7 @@ Scatch is a modern eCommerce web app for handbags, built with Express, MongoDB, 
 ## Demo
 <img width="1884" height="961" alt="Screenshot 2025-08-28 174718" src="https://github.com/user-attachments/assets/2c1bcaff-b5b6-46e2-ad08-586d0fd61e09" />
 <img width="1043" height="533" alt="Screenshot 2025-08-28 175739" src="https://github.com/user-attachments/assets/dbbaf139-70ff-4f5b-8366-9d5f65dbe20c" />
-![2](https://github.com/user-attachments/assets/50509acc-9da2-404d-8327-9c79b6441aa7)
+<img width="902" height="908" alt="Screenshot 2025-08-28 181053" src="https://github.com/user-attachments/assets/08f99d55-8737-481b-a19d-f694f7907bbf" />
 ![3](https://github.com/user-attachments/assets/6eb4b108-d263-46dc-872f-9a6adb8d56e0)
 
 ## Features
@@ -36,6 +36,7 @@ Open your browser and go to http://localhost:3000.
 - **Shop:** Browse handbags, add items to your cart, and proceed to checkout.
 - **My Account:** Admins can log in to manage products and view analytics.
 - **Logout:** Click on the logout option to end your session.
+
 
 
 
